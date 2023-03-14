@@ -605,7 +605,8 @@ margin-bottom: 16px;
     color: #434455; 
 }
 
-.img-sect-link:hover .overlay {
+.img-sect-link:hover .overlay,
+.img-sect-link:focus .overlay {
     transform: translate(0, 0);
 }
 
