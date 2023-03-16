@@ -31,6 +31,7 @@ body {
     --bg-btn-foot-color: #f4f4fd;
     --success-color: #31D0AA;
     --secondaty-font: 'Raleway', sans-serif;
+    --transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 h1, h2, h3, h4, h5, p {
@@ -88,7 +89,7 @@ a, li {
     background-color: var(--hero-title-text-color);
     border-bottom: 1px solid var(--color-text);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-duration), background-color var(--transition-duration), box-shadow var(--transition-duration);
 }
     /* transition-property: color;
     transition-property: background-color;
@@ -229,7 +230,7 @@ a, li {
     letter-spacing: 0.04em;
     color: var(--hero-title-text-color);
     cursor: pointer;
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background var(--transition-duration);
 }
 
 .hero-text-btn {
@@ -550,7 +551,7 @@ margin-bottom: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     padding: 12px 24px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-duration), background var(--transition-duration), border-color var(--transition-duration);
 }
 
 .modal-btn:hover,
@@ -637,7 +638,7 @@ margin-bottom: 16px;
     width: 100%;
     height: 100%;
     transform: translate(0, 100%);
-    transition: transform 250ms linear;
+    transition: var(--transition-duration);
 }
 
 .img-overlay-cont {
