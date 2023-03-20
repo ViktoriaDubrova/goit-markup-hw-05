@@ -181,9 +181,9 @@ a, li {
 
 }
 
-.item-nav:hover::after {
+/* .item-nav:hover::after {
     opacity: 1;
-}
+} */
 
 .mail-tel {
     font-style: normal;
