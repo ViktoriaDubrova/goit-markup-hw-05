@@ -164,7 +164,11 @@ a, li {
     padding: 24px 0;
 }
 
-.item-nav::after {
+.item-nav.active {
+    color: var(--ocean);
+}
+
+.item-nav.active::after {
     content: "";
 
     position: absolute;
@@ -173,9 +177,8 @@ a, li {
     height: 4px;
     background-color: var(--ocean);
     border-radius: 2px;
+    bottom: -3px;
 
-    opacity: 0;
-    transition: opacity var(--transition-duration);
 }
 
 .item-nav:hover::after {
@@ -408,6 +411,7 @@ a, li {
 	border-radius: 50%;
 	background-color: var(--color-link);
     transform: background-color var(--transition-duration);
+    transition: background-color var(--transition-duration);
 }
 
 .team-social-link:hover,
@@ -444,6 +448,8 @@ a, li {
 	justify-content: center;
     transform: border-color var(--transition-duration),
         color var(--transition-duration);
+    transition: border-color var(--transition-duration), 
+        color var(--transition-duration);
 }
 
 .customers-link:is(:hover, :focus) {
@@ -476,6 +482,7 @@ a, li {
 	border-radius: 50%;
 	background-color: rgba(255, 255, 255, 0.1);
     transform: background-color var(--transition-duration);
+    transition: background-color var(--transition-duration);
 }
 
 .footer-social-link:focus,
@@ -657,6 +664,7 @@ margin-bottom: 16px;
     height: 100%;
     transform: translate(0, 100%);
     transition: var(--transition-duration);
+    transition: transform var(--transition-duration);
 }
 
 .img-overlay-cont {
